@@ -21,19 +21,19 @@ Major mode for editing RPM .spec files.
 Tryb g³ówny do edycji RPM-owych plików .spec.
 
 %prep
-%setup  -q -c %{name}-%{version}
+%setup -q -c %{name}-%{version}
 
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/lisp/spec-mode
 
-install rpm-spec-mode.el  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/lisp/spec-mode
+install rpm-spec-mode.el $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/lisp/spec-mode
 
 cat <<EOF >$RPM_BUILD_ROOT%{_datadir}/xemacs-packages/lisp/spec-mode/auto-autoloads.el
 (autoload 'rpm-spec-mode "rpm-spec-mode.el" "RPM spec mode." t)
 (setq auto-mode-alist (append '(("\\\\.spec" . rpm-spec-mode))
-                                auto-mode-alist))
+				auto-mode-alist))
 
 (add-hook 'rpm-spec-mode-hook 'turn-on-font-lock)
 EOF
