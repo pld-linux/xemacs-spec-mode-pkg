@@ -1,13 +1,13 @@
 Summary:	Major mode for editing RPM .spec files
 Summary(pl):	Tryb g³ówny do edycji RPM-owych plików .spec
 Name:		xemacs-spec-mode-pkg
-Version:	0.08a
+Version:	0.09
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
-Source0:	xemacs-pld-extras-0.21.tgz
+Source0:	%{name}-%{version}.tar.gz
 #Source1:	http://www.xemacs.org/~stigb/rpm-spec-mode.el
 Requires:	xemacs
 Requires:	xemacs-pc-pkg
@@ -29,7 +29,7 @@ Tryb g³ówny do edycji RPM-owych plików .spec.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/lisp/spec-mode
 
-install ./xemacs-pld-extras/rpm-spec-mode.el  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/lisp/spec-mode
+install rpm-spec-mode.el  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/lisp/spec-mode
 
 cat <<EOF >$RPM_BUILD_ROOT%{_datadir}/xemacs-packages/lisp/spec-mode/auto-autoloads.el
 (autoload 'rpm-spec-mode "rpm-spec-mode.el" "RPM spec mode." t)
