@@ -12,7 +12,7 @@ Requires:	xemacs-pc-pkg
 Requires:	xemacs-cc-mode-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
-	
+
 %description
 Major mode for editing RPM .spec files.
 
