@@ -2,7 +2,7 @@ Summary:	Major mode for editing RPM .spec files
 Summary(pl):	Tryb g³ówny do edycji RPM-owych plików .spec
 Name:		xemacs-spec-mode-pkg
 Version:	0.09
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	%{name}-%{version}.tar.gz
