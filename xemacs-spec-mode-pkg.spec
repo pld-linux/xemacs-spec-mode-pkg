@@ -5,6 +5,7 @@ Version:	0.08a
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	xemacs-pld-extras-0.21.tgz
 #Source1:	http://www.xemacs.org/~stigb/rpm-spec-mode.el
@@ -15,8 +16,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 	
 %description
+Major mode for editing RPM .spec files.
 
 %description -l pl
+Tryb g³ówny do edycji RPM-owych plików .spec.
 
 %prep
 %setup  -q -c %{name}-%{version}
