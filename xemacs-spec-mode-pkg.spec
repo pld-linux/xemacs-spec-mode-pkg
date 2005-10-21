@@ -11,8 +11,8 @@ Source0:	%{name}-%{version}.tar.gz
 Requires:	xemacs
 Requires:	xemacs-pc-pkg
 Requires:	xemacs-cc-mode-pkg
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Major mode for editing RPM .spec files.
@@ -21,8 +21,7 @@ Major mode for editing RPM .spec files.
 Tryb g³ówny do edycji RPM-owych plików .spec.
 
 %prep
-%setup -q -c %{name}-%{version}
-
+%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
