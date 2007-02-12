@@ -1,5 +1,5 @@
 Summary:	Major mode for editing RPM .spec files
-Summary(pl):	Tryb g丑wny do edycji RPM-owych plik體 .spec
+Summary(pl.UTF-8):   Tryb g艂贸wny do edycji RPM-owych plik贸w .spec
 Name:		xemacs-spec-mode-pkg
 Version:	0.09
 Release:	2
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Major mode for editing RPM .spec files.
 
-%description -l pl
-Tryb g丑wny do edycji RPM-owych plik體 .spec.
+%description -l pl.UTF-8
+Tryb g艂贸wny do edycji RPM-owych plik贸w .spec.
 
 %prep
 %setup -q -c
